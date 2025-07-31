@@ -1,0 +1,14 @@
+body{
+  margin:5px;
+  padding:0px
+}
+.main{
+  border:1px solid black;
+  margin-bottom: 10px;
+}
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
