@@ -1,0 +1,13 @@
+body{
+  margin:20px;
+  padding:0px
+}
+.tab-heading{
+  border:1px solid black;
+  padding:5px;
+  cursor: pointer;
+}
+
+.active{
+  background-color: aqua;
+}
