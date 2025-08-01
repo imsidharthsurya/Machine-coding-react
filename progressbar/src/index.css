@@ -1,0 +1,21 @@
+body{
+  margin:0px;
+  padding:0px
+}
+.outer-div{
+  position: relative;
+  border: 1px solid black;
+  height: 20px;
+  width: 500px;
+  margin: 30px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.inner-div{
+  position: absolute;
+  background-color: green;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
