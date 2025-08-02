@@ -1,0 +1,12 @@
+body{
+  margin:0;
+  padding:0;
+}
+.star{
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.rated-star{
+  color:gold
+}
