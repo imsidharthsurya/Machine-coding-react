@@ -1,0 +1,28 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+.btn{
+  background-color: black;
+  padding:5px;
+  color: white;
+  position: absolute;
+  cursor: pointer;
+  top:150px
+}
+.img{
+  height: 300px;
+  width: 500px;
+}
+.left{
+  left:10px;
+}
+.right{
+  right:10px
+}
+.container{
+  border: 1px black solid;
+  position: relative;
+  display: flex;
+  justify-self: center
+}
