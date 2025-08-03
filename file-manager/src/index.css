@@ -8,4 +8,5 @@ body{
 }
 .content-name{
   cursor: pointer;
+  margin-left: 5px;
 }

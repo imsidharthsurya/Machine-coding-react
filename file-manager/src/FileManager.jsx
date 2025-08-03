@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const FileManager = ({ data }) => {
+const FileManager = ({ data, addNode, removeNode }) => {
   const [showFolder, setShowFolder] = useState({});
   return (
     <div className="file-container">
@@ -16,13 +16,35 @@ const FileManager = ({ data }) => {
                 }))
               }
             >
+              {node.isFolder ? (showFolder[node.name] ? "📂" : "📁") : ""}
               {node.name}
             </span>
-            <span>{node.isFolder && "📄"} </span>
-            <span>{node.isFolder && "📁"} </span>
+            {node.isFolder && (
+              <>
+                <span
+                  className="content-name"
+                  onClick={() => addNode(node.id, "my file.js", false)}
+                >
+                  📄
+                </span>
+                <span
+                  className="content-name"
+                  onClick={() => addNode(node.id, "my folder", true)}
+                >
+                  📁
+                </span>
+              </>
+            )}
 
+            <span className="content-name" onClick={() => removeNode(node.id)}>
+              🗑️
+            </span>
             {showFolder[node.name] && node.children && (
-              <FileManager data={node.children} />
+              <FileManager
+                data={node.children}
+                addNode={addNode}
+                removeNode={removeNode}
+              />
             )}
           </div>
         );
