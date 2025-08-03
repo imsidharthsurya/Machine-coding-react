@@ -32,7 +32,24 @@ function App() {
     setAllData((prev) => addChild(prev));
   };
 
-  const removeNode = (nodeId) => {};
+  const removeNode = (nodeId) => {
+    const deleteNode = (list) => {
+      return list
+        .filter((node) => {
+          return node.id !== nodeId;
+        })
+        .map((node) => {
+          if (node.children) {
+            return {
+              ...node,
+              children: deleteNode(node.children),
+            };
+          }
+          return node;
+        });
+    };
+    setAllData((prev) => deleteNode(prev));
+  };
   return (
     <>
       <FileManager data={allData} addNode={addNode} removeNode={removeNode} />
