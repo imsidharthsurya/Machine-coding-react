@@ -1,0 +1,11 @@
+body{
+  margin:0;
+  padding:0;
+}
+.file-container{
+  padding:10px;
+  border-left: 1px solid black;
+}
+.content-name{
+  cursor: pointer;
+}
