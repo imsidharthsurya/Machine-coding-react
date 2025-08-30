@@ -1,12 +1,23 @@
-# React + Vite
+# File Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+A mini file manager UI for uploading, deleting, and organizing local files.
 
-Currently, two official plugins are available:
+## Features
+- Upload, rename, delete files
+- Nested folder structure
+- Drag-and-drop support
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Approach
+1. **Tree Structure:** Use nested objects to represent folders/files.
+2. **State:** Track selected and active files.
+3. **Events:** Handle file operations using callbacks.
 
-## Expanding the ESLint configuration
+## Usage
+```jsx
+<FileManager initialFiles={[{name: 'file.txt', type: 'file'}]} />
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## File Structure
+- `FileManager.js` : Main logic
+- `FileManager.css` : Styles
