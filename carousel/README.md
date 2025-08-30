@@ -1,12 +1,23 @@
-# React + Vite
+# Carousel Component
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+A Carousel cycles through a series of images or content panels, ideal for displaying featured items, testimonials, or image galleries.
 
-Currently, two official plugins are available:
+## Features
+- Auto-play and manual navigation
+- Looping and pause-on-hover
+- Responsive design
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Approach
+1. **State:** Track current slide index in state.
+2. **Controls:** Next/Previous buttons and indicators.
+3. **Performance:** Debounce transitions for smoothness.
 
-## Expanding the ESLint configuration
+## Usage
+```jsx
+<Carousel items={[<img src="1.jpg"/>, <img src="2.jpg"/>]} />
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## File Structure
+- `Carousel.js` : Main component
+- `Carousel.css` : Styles
