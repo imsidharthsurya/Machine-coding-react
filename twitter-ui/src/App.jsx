@@ -7,7 +7,6 @@ function App() {
   const [allTweets, setAllTweets] = useState(tweets);
   const addTweet = (tweet) => {
     setAllTweets((prev) => [...prev, tweet]);
-    alert("Tweet added");
   };
 
   const updateTweet = (tweetId, content) => {
