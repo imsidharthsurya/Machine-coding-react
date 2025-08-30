@@ -1,12 +1,23 @@
-# React + Vite
+# Star Rating Component
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+Allows users to rate items using clickable stars, with support for fractional ratings.
 
-Currently, two official plugins are available:
+## Features
+- Hover and select rating
+- Custom max stars
+- Read-only or interactive mode
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Approach
+1. **Render Logic:** Array map for stars.
+2. **Events:** Mouse hover and click listeners.
+3. **Fractional Support:** Render partial stars.
 
-## Expanding the ESLint configuration
+## Usage
+```jsx
+<StarRating value={4.5} max={5} onChange={setRating} />
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## File Structure
+- `StarRating.js` : Logic
+- `StarRating.css` : Styles
