@@ -2,7 +2,7 @@ import profile from "../profile.png";
 import { formatDate } from "../utils/helper";
 import { useState } from "react";
 const Tweet = ({ tweet, updateTweet }) => {
-  const date = formatDate(tweet?.createdAt);
+  const date = formatDate(tweet?.createdAt?.toString());
   const [isEdit, setIsEdit] = useState(false);
   const [editedTweet, setEditedTweet] = useState(tweet?.content);
 

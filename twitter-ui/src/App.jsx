@@ -21,11 +21,17 @@ function App() {
       })
     );
   };
+  const handleSort = () => {
+    const tweetsCopy = [...allTweets];
+    tweetsCopy.sort((a, b) => b.createdAt.getTime() - a.createdAt.getTime());
+    setAllTweets(tweetsCopy);
+  };
   return (
     <>
       <h1>Twitter</h1>
 
       <PostTweet addTweet={addTweet} />
+      <button onClick={handleSort}>Sort Tweet</button>
       <TweetList allTweets={allTweets} updateTweet={updateTweet} />
     </>
   );

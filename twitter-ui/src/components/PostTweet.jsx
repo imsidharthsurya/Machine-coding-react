@@ -9,7 +9,7 @@ const PostTweet = ({ addTweet }) => {
       id: Math.floor(Math.random() * 10000),
       content: currentTweet,
       likeCount: 10,
-      createdAt: new Date().toString(),
+      createdAt: new Date(),
     });
     setCurrentTweet("");
   };
