@@ -1,12 +1,23 @@
-# React + Vite
+# Tab Component
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+Displays content in tabbed sections for easy switching between views.
 
-Currently, two official plugins are available:
+## Features
+- Keyboard navigation
+- Dynamic tab content
+- Animated transitions
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Approach
+1. **State:** Track active tab.
+2. **Accessibility:** ARIA roles and keyboard support.
+3. **Content:** Render children based on active tab.
 
-## Expanding the ESLint configuration
+## Usage
+```jsx
+<Tabs tabs={[{label: 'Tab 1', content: <Tab1/>}]} />
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## File Structure
+- `Tabs.js` : Main logic
+- `Tabs.css` : Styles
