@@ -1,0 +1,19 @@
+body{
+  margin:0;
+  padding:0;
+}
+
+.grid{
+  border: 1px solid black;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.row-grid{
+  display: flex;
+}
