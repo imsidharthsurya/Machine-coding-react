@@ -1,0 +1,21 @@
+body{
+  margin:0;
+  padding: 0;
+}
+
+.row{
+  display: flex;
+}
+
+.grid{
+  border: 1px solid black;
+  padding: 15px;
+}
+
+.main-cont{
+  margin:50px
+}
+
+.colored{
+  background-color: green;
+}
