@@ -1,0 +1,14 @@
+*{
+  margin:0;
+  padding:0;
+}
+
+.todo-div{
+  padding:20px;
+  display: flex;
+  gap:10px
+}
+
+.add-todo{
+  padding:20px
+}
