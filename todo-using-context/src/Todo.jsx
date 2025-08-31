@@ -30,12 +30,13 @@ const Todo = ({ todo }) => {
 
   const handleEdit = () => {
     if (todoTask === "") return;
+
     setIsEdit(!isEdit);
     if (isEdit) {
       const todoCopy = [...todos];
       setTodos(
         todoCopy.map((todoCurr) => {
-          if (todoCurr.id === id) {
+          if (todoCurr.id === todo.id) {
             todoCurr.task = todoTask;
           }
           return todoCurr;
