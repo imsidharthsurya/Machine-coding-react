@@ -1,0 +1,8 @@
+*{
+  margin:0;
+  padding:0;
+}
+
+.email-wrapper,.password-wrapper,button{
+  margin:20px 50px;
+}
