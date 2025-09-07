@@ -1,0 +1,23 @@
+*{
+  margin:0;
+  padding:0;
+}
+
+.main-cont{
+  display: flex;
+  gap: 50px;
+  margin:30px
+}
+
+.tile{
+  border: 1px solid black;
+  padding:30px 40px;
+}
+
+.task-cont{
+  background-color: gray;
+  margin:20px;
+  padding:10px;
+  color:white;
+  cursor: move;
+}
